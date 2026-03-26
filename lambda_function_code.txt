@@ -28,7 +28,7 @@ def lambda_handler(event, context):
             )
             print(json.dumps(response))
 
-            # Change LINE by WORD if you want word level extraction 
+            #Change LINE by WORD if you want word level extraction 
             raw_text = extract_text(response, extract_by="LINE")
             print(raw_text)
             
